@@ -310,15 +310,17 @@ ul a {
 }
 
 .cont {
-   
+
     height: 73px;
     width: 80px;
     padding: 12px;
 }
-.cont p{
+
+.cont p {
     font-size: .65rem;
 }
-.foot-panel5{
+
+.foot-panel5 {
     height: 76px;
     width: 100%;
     background-color: #131a22;
@@ -330,16 +332,378 @@ ul a {
     justify-content: center;
     text-align: center;
     color: white;
-  }
-   
-  .condition a{
+}
+
+.condition a {
     color: white;
     padding: 3px;
-  }
-  .copyright{
+}
+
+.copyright {
+    
     text-align: center;
     color: white;
-  }
-  
+}
 
-   
+/* ==================== RESPONSIVE STYLES ==================== */
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-search {
+        width: 400px;
+    }
+
+    .box {
+        width: 45%;
+    }
+
+    .panel-ops p {
+        margin-left: 10px;
+        font-size: 0.75rem;
+    }
+
+    .hero-msg {
+        width: 90%;
+        font-size: 0.75rem;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 5px;
+        gap: 10px;
+    }
+
+    .nav-logo {
+        order: 1;
+        width: 80px;
+        height: 40px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .nav-address {
+        order: 3;
+        display: none;
+    }
+
+    .nav-search {
+        order: 6;
+        width: 100%;
+        height: 40px;
+        margin-top: 5px;
+    }
+
+    .india {
+        order: 2;
+        font-size: 1.2rem;
+    }
+
+    .india select {
+        display: none;
+    }
+
+    .nav-sign {
+        order: 4;
+        font-size: 0.7rem;
+    }
+
+    .nav-sign p span {
+        font-size: 0.6rem;
+    }
+
+    .nav-second {
+        font-size: 0.7rem;
+    }
+
+    .nav-return {
+        order: 5;
+        display: none;
+    }
+
+    .nav-cart {
+        order: 5;
+        font-size: 0.7rem;
+    }
+
+    .nav-cart i {
+        font-size: 22px;
+    }
+
+    /* Panel Section */
+    .panel {
+        height: auto;
+        padding: 8px;
+        flex-wrap: wrap;
+    }
+
+    .panel-all {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .panel-ops {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .panel-ops::-webkit-scrollbar {
+        display: none;
+    }
+
+    .panel-ops p {
+        display: inline-block;
+        margin-left: 8px;
+        font-size: 0.75rem;
+        padding: 5px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        height: 200px;
+        background-position: center;
+    }
+
+    .hero-msg {
+        width: 95%;
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.75rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-msg p {
+        margin-bottom: 5px;
+    }
+
+    /* Shop Section */
+    .shop-section {
+        padding: 10px;
+    }
+
+    .box {
+        width: 48%;
+        height: 320px;
+        padding: 10px 0px 10px;
+        margin-top: 10px;
+    }
+
+    .box-img {
+        height: 200px;
+    }
+
+    .box-content {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .box-content h2 {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    .foot-panel2 {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .foot-panel2 ul {
+        width: 45%;
+        margin: 10px 0;
+    }
+
+    .foot-panel3 {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .logo2 {
+        width: 80px;
+        height: 40px;
+    }
+
+    .foot-panel4 {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .cont {
+        width: 45%;
+        height: auto;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .foot-panel5 {
+        height: auto;
+        padding: 15px 10px;
+    }
+
+    .condition {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .condition a {
+        font-size: 0.75rem;
+    }
+
+    .copyright {
+        font-size: 0.75rem;
+        margin-top: 10px;
+    }
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 8px 5px;
+        gap: 5px;
+    }
+
+    .nav-logo {
+        width: 70px;
+        height: 35px;
+    }
+
+    .logo {
+        height: 35px;
+    }
+
+    .nav-search {
+        width: 100%;
+    }
+
+    .search-select {
+        width: 40px;
+        font-size: 0.75rem;
+    }
+
+    .search-input {
+        font-size: 0.85rem;
+    }
+
+    .nav-sign {
+        padding: 2px;
+    }
+
+    .nav-sign p span {
+        font-size: 0.55rem;
+    }
+
+    .nav-second {
+        font-size: 0.65rem;
+    }
+
+    .nav-cart {
+        font-size: 0.65rem;
+    }
+
+    .nav-cart i {
+        font-size: 18px;
+    }
+
+    /* Panel */
+    .panel-ops p {
+        font-size: 0.7rem;
+        margin-left: 5px;
+    }
+
+    /* Hero */
+    .hero-section {
+        height: 150px;
+    }
+
+    .hero-msg {
+        font-size: 0.65rem;
+        padding: 8px;
+    }
+
+    /* Shop Section */
+    .box {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        margin: 10px 5px;
+    }
+
+    .box-img {
+        height: 220px;
+    }
+
+    .box-content h2 {
+        font-size: 1.1rem;
+    }
+
+    /* Footer */
+    .foot-panel2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot-panel2 ul {
+        width: 90%;
+        text-align: center;
+    }
+
+    .foot-panel2 ul p {
+        font-size: 1rem;
+    }
+
+    .foot-panel2 ul a {
+        font-size: 0.8rem;
+    }
+
+    .foot-panel3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .foot-panel4 {
+        justify-content: center;
+    }
+
+    .cont {
+        width: 40%;
+        text-align: center;
+    }
+
+    .cont h5 {
+        font-size: 0.75rem;
+    }
+
+    .cont p {
+        font-size: 0.6rem;
+    }
+
+    .condition {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .copyright {
+        font-size: 0.65rem;
+        padding: 10px;
+    }
+}
